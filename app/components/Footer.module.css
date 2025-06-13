@@ -1,0 +1,207 @@
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 48px 0 16px;
+  font-size: 15px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 32px;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.subscribeCol {
+  flex: 1.5;
+  min-width: 320px;
+}
+
+.subscribeTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subscribeDesc {
+  color: #ccc;
+  margin-bottom: 24px;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 0;
+  margin-top: 8px;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 16px 18px;
+  border: 1px solid #fff;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+}
+
+.emailInput::placeholder {
+  color: #999;
+}
+
+.subscribeBtn {
+  padding: 0 32px;
+  background: transparent;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  background: #111;
+}
+
+.subscribeBtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.contactCol {
+  flex: 1;
+  min-width: 260px;
+}
+
+.contactTitle {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contactText {
+  color: #ccc;
+  margin: 2px 0;
+  font-size: 15px;
+}
+
+.currencyBlock {
+  margin-top: 24px;
+}
+
+.currencyTitle {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.currencyRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.currencyText {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.currencyNote {
+  color: #999;
+  font-size: 13px;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 40px 0 32px;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.bottomCol {
+  min-width: 220px;
+  flex: 1;
+}
+
+.bottomHeading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #ccc;
+}
+
+.linkList li {
+  margin-bottom: 10px;
+}
+
+.linkList a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.linkList a:hover {
+  color: #ccc;
+}
+
+.socialRow {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.acceptsBlock {
+  margin-top: 18px;
+}
+
+.acceptsHeading {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.paymentsRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid #333;
+}
+
+@media (max-width: 900px) {
+  .topRow, .bottomRow {
+    flex-direction: column;
+    gap: 32px;
+    max-width: 98vw;
+  }
+  .subscribeCol, .contactCol, .bottomCol {
+    min-width: 0;
+  }
+}
